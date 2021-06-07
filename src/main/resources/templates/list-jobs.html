@@ -22,19 +22,19 @@
             </tr>
             <tr>
                 <td>Employer</td>
-                <td th:text="${Job.employer}"></td>
+                <td> <a th:href="@{/search/results(searchType = employer, searchTerm = ${Job.employer})}" th:text="${Job.employer}"></a></td>
             </tr>
             <tr>
                 <td>Location</td>
-                <td th:text="${Job.location}"></td>
+                <td> <a th:href="@{/search/results(searchType = location, searchTerm = ${Job.location})}" th:text="${Job.location}"></a></td>
             </tr>
             <tr>
                 <td>Position Type</td>
-                <td th:text="${Job.positionType}"></td>
+                <td> <a th:href="@{/search/results(searchType = positionType, searchTerm = ${Job.positionType})}" th:text="${Job.positionType}"></a></td>
             </tr>
             <tr>
                 <td>Skills</td>
-                <td th:text="${Job.coreCompetency}"></td>
+                <td> <a th:href="@{/search/results(searchType = coreCompetency, searchTerm = ${Job.coreCompetency})}" th:text="${Job.coreCompetency}"></a></td>
             </tr>
 
         </table>
